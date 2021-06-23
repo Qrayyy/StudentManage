@@ -1,0 +1,44 @@
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+  <display-name>Archetype Created Web Application</display-name>
+
+
+  <servlet>
+    <servlet-name>getAllstudent</servlet-name>
+    <servlet-class>top_caicaizi.service.AllstudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getAllstudent</servlet-name>
+    <url-pattern>/allstu</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Addstudent</servlet-name>
+    <servlet-class>top_caicaizi.service.AddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Addstudent</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>deletestudent</servlet-name>
+    <servlet-class>top_caicaizi.service.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deletestudent</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>updatestudent</servlet-name>
+    <servlet-class>top_caicaizi.service.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updatestudent</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+
+</web-app>
